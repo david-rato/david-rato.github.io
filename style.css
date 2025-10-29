@@ -12,22 +12,26 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
-  background: #050609;
+  background-color: #050609;
   color: #eaeaea;
   font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 header {
-  padding: 20px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  width: 280px;
-  max-width: 70%;
+  width: 320px;
+  max-width: 80%;
 }
 
 main {
@@ -36,8 +40,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  text-align: center;
+  gap: 28px;
+  padding: 40px 20px;
 }
 
 h1 {
@@ -95,4 +100,13 @@ footer {
   body {
     height: -webkit-fill-available;
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+main, header, footer {
+  animation: fadeIn 0.8s ease forwards;
 }
