@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #0c0f17, #050609);
+  color: #eaeaea;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  width: 200px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.highlight {
+  color: #5bc0ff;
+}
+
+.text {
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.cta {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.qr {
+  width: 160px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00bfff;
+}
+
+.btn {
+  background: linear-gradient(90deg, #ff7b00, #ffb347);
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffb347;
+}
+
+footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
