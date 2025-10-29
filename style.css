@@ -7,11 +7,15 @@
   font-family: 'Inter', sans-serif;
 }
 
-body {
-  background: radial-gradient(circle at top left, #0c0f17, #050609);
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #050609;
   color: #eaeaea;
-  text-align: center;
-  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,7 +26,8 @@ header {
 }
 
 .logo {
-  width: 200px;
+  width: 260px;
+  max-width: 70%;
 }
 
 main {
@@ -84,4 +89,10 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
   color: #b0b0b0;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    height: -webkit-fill-available;
+  }
 }
